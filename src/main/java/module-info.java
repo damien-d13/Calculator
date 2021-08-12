@@ -4,10 +4,10 @@ module fr.damien.calculatrice {
     requires javafx.graphics;
 
 
-    opens fr.damien.calculatrice to javafx.fxml;
-    exports fr.damien.calculatrice;
-    exports fr.damien.calculatrice.controller;
-    opens fr.damien.calculatrice.controller to javafx.fxml;
-    exports fr.damien.calculatrice.view;
-    opens fr.damien.calculatrice.view to javafx.fxml;
+    opens fr.damien.calculator to javafx.fxml;
+    exports fr.damien.calculator;
+    exports fr.damien.calculator.controller;
+    opens fr.damien.calculator.controller to javafx.fxml;
+    exports fr.damien.calculator.view;
+    opens fr.damien.calculator.view to javafx.fxml;
 }

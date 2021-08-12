@@ -1,6 +1,6 @@
-package fr.damien.calculatrice;
+package fr.damien.calculator;
 
-import fr.damien.calculatrice.controller.CalculatriceController;
+import fr.damien.calculator.controller.CalculatriceController;
 
 public class App {
 

@@ -1,4 +1,4 @@
-package fr.damien.calculatrice.view;
+package fr.damien.calculator.view;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;

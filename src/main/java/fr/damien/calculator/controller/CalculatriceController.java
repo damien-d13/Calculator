@@ -1,7 +1,7 @@
-package fr.damien.calculatrice.controller;
+package fr.damien.calculator.controller;
 
-import fr.damien.calculatrice.App;
-import fr.damien.calculatrice.view.Display;
+import fr.damien.calculator.App;
+import fr.damien.calculator.view.Display;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
