@@ -1,5 +1,6 @@
 package fr.damien.calculator.view;
 
+import fr.damien.calculator.controller.NumberSpinner;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
@@ -10,6 +11,9 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 
 public class Display{
@@ -44,13 +48,17 @@ public class Display{
 
         VBox rightBox = new VBox();
 
-        //Create Element
-
+        /**
+         * Create Element
+         * */
+        // Change Format for field
+        // final NumberSpinner decimalFormat = new NumberSpinner(BigDecimal.ZERO, new BigDecimal("0.05"), new DecimalFormat("#,##0.00"));
         TextField textField = new TextField();
         textField.setId(TEXTRESULT);
 
         Button button0 = new Button("0");
-        button0.setId(BUTTON0);
+        button0.getStyleClass().add(BUTTON);
+        //Set style in java document
 //        button0.setStyle("-fx-background-color: #2969c0; ");
 
         Button button1 = new Button("1");
@@ -92,7 +100,16 @@ public class Display{
         Button buttonDiv = new Button("/");
         buttonDiv.getStyleClass().add(BUTTONSIGN);
 
-        //Bind Element to box
+        Button buttonNeg = new Button("-/+");
+        buttonNeg.getStyleClass().add(BUTTONSIGN);
+
+        Button buttonComma = new Button(",");
+        buttonComma.getStyleClass().add(BUTTONSIGN);
+
+        /**
+         *  Bind Element to box
+         * */
+        // Change Format for field ( textField / decimalFormat)
         textBox.getChildren().addAll(textField);
         buttonBox.getChildren().addAll(leftBox, rightBox);
         leftBox.getChildren().addAll(colButton1, colButton2, colButton3, colButton4);
@@ -100,7 +117,7 @@ public class Display{
         colButton1.getChildren().addAll(button7, button8, button9);
         colButton2.getChildren().addAll(button4, button5, button6);
         colButton3.getChildren().addAll(button1, button2, button3);
-        colButton4.getChildren().add(button0);
+        colButton4.getChildren().addAll(buttonNeg, button0, buttonComma);
 
         rightBox.getChildren().addAll(buttonLess, buttonMore, buttonMulti, buttonDiv);
 
