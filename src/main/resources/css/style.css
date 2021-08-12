@@ -1,0 +1,79 @@
+.button-number {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 100px;
+    -fx-hgap: 40px;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+
+    -fx-background-color: #2969c0;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+
+}
+
+.button-sign {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 100px;
+    -fx-hgap: 40px;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+
+    -fx-background-color: #6029c0;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+
+
+}
+
+.button-number:hover, #text-result:hover, #button-number-0:hover, .button-sign:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 20, 0, 0, 0);
+}
+
+#text-result {
+    -fx-pref-width: 600px;
+    -fx-pref-height: 100px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+
+}
+
+#button-number-0 {
+    -fx-pref-width: 450px;
+    -fx-pref-height: 100px;
+    -fx-hgap: 20px;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+
+    -fx-background-color: #2969c0;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
